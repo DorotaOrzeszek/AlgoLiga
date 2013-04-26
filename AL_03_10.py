@@ -2,8 +2,8 @@ import math
 
 def integrate(x,coeffs):
 	(a,b,c,d,e,f) = coeffs
-  ans = (a-d)*(x**3)/3 + (b-e)*(x**2)/2 + (c-f)*x
-  return ans
+	ans = (a-d)*(x**3)/3 + (b-e)*(x**2)/2 + (c-f)*x
+	return ans
   
 t = int(raw_input())
 while t > 0:
@@ -12,7 +12,7 @@ while t > 0:
   # f(x) = a x^2 + b x + c, a > 0
   (a,b,c) = [float(x) for x in line1]
 	# g(x) = d x^2 + e x + f, d < 0
-	(d,e,f) = [float(x) for x in line2]
+  (d,e,f) = [float(x) for x in line2]
   # delta for f(x)-g(x)
   delta = (b-e)**2 - 4*(a-d)*(c-f)
   if delta <= 0:
